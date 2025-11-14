@@ -32,3 +32,23 @@ img {
     width: 120px;
     border-radius: 5px;
 }
+
+.page_table_title {
+    background-color: #0078d7;
+    color: white;
+}
+
+.highlight_row {
+    background-color: #cce7ff;
+    font-size: 20px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.song_link {
+    color: black;
+}
+
+.song_link:hover {
+    color: red;
+}
