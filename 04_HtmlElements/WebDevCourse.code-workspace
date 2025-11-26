@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "WebDevCourse",
+			"path": ".."
+		},
+		{
+			"name": "03_Layout",
+			"path": "../../03_Layout"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WebDevCourse"
+	}
+}
