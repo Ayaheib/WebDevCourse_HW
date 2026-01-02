@@ -3,87 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TubeTracker – Aya Heib</title>
-
-    <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>WEB CLIENT PROJECT</title>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
-<body class="p-4">
+<body>
+    <div class="navbar">
+        <div class="nav-title">WEB CLIENT PROJECT</div>
+    </div>
+
     <div class="container">
+        <div class="card">
+            <h2>Student Details</h2>
+            <p><b>Name:</b> Aya Heib</p>
+            <p><b>ID:</b> 322286667</p>
+            <p>
+                <a href="https://github.com/Ayaheib" target="_blank">GitHub</a> |
+                <a href="http://localhost:3000" target="_blank">Live App</a>
+            </p>
 
-        <h1 class="text-center text-primary mb-3">
-            🎵 Excercise Songs List
-        </h1>
-        <p class="text-center text-secondary mb-4">
-            Aya Heib
-        </p>
 
-        <div class="card border-primary mb-4">
-            <div class="card-body">
-                <form id="songForm" class="row g-2">
-
-                    <div class="col-md-4">
-                        <input type="text" id="title" class="form-control" placeholder="Song Title" required>
-                    </div>
-
-                    <div class="col-md-4">
-                        <input type="url" id="url" class="form-control" placeholder="YouTube URL" required>
-                    </div>
-
-                    <div class="col-md-2">
-                        <input type="number" id="rating" class="form-control" min="1" max="10" placeholder="Rating 1–10"
-                            required>
-                    </div>
-
-                    <div class="col-md-2">
-                        <button type="submit" id="submitBtn" class="btn btn-success w-100">
-                            <i class="fas fa-plus"></i> Add
-                        </button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-
-        <!-- SORT -->
-        <div class="mb-3">
-            <label class="me-3"><input type="radio" name="sort" value="date" checked> Date</label>
-            <label class="me-3"><input type="radio" name="sort" value="title"> Name</label>
-            <label><input type="radio" name="sort" value="rating"> Rating</label>
-        </div>
-
-        <!-- TOGGLE -->
-        <img id="viewToggle" src="table.png" width="35" style="cursor:pointer" title="Toggle view">
-
-        <!-- TABLE -->
-        <table class="table table-hover mt-3">
-            <thead>
-                <tr>
-                    <th>Song</th>
-                    <th>Rating</th>
-                    <th class="text-end">Actions</th>
-                </tr>
-            </thead>
-            <tbody id="songList"></tbody>
-        </table>
-
-    </div>
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- MODAL -->
-    <div class="modal fade" id="playerModal">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body p-0">
-                    <iframe id="playerFrame" width="100%" height="400" allowfullscreen></iframe>
-                </div>
-            </div>
+            <h2>Authentication</h2>
+            <a class="btn" href="login.html">Login</a>
+            <a class="btn" href="register.html">Register</a>
         </div>
     </div>
 
+    <script src="/scripts/auth.js"></script>
+    <script>redirectIfLogged();</script>
 </body>
 
 </html>

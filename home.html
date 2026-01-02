@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-title">Home</div>
+        <div class="nav-right">
+            <a href="search.html">Search</a>
+            <a href="playlists.html">Playlists</a>
+            <a onclick="logout()">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card center">
+            <img id="profileImg" class="profile-img">
+            <h2 id="welcome"></h2>
+            <p>Choose a page:</p>
+            <a class="btn" href="search.html">Go to Search</a>
+            <a class="btn" href="playlists.html">Go to Playlists</a>
+        </div>
+    </div>
+
+    <script src="/scripts/auth.js"></script>
+    <script>protectPage(); loadProfile();</script>
+</body>
+
+</html>

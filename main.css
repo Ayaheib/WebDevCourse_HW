@@ -1,0 +1,74 @@
+body {
+    background: #0e1624;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+}
+
+.navbar {
+    background: #041021;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    color: #3db9ff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-right a {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background: #1a2842;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.card {
+    background: #0b1220;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background: #3db9ff;
+    cursor: pointer;
+}
+
+a.btn {
+    display: inline-block;
+    background: #3db9ff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #3db9ff;
+}
+
+.center {
+    text-align: center;
+}

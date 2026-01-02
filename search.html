@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-title">Search</div>
+        <div class="nav-right">
+            <a href="home.html">Home</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- User info -->
+        <div class="card center">
+            <img id="profileImg" class="profile-img" alt="Profile image">
+            <h2 id="welcome"></h2>
+            <p>Search YouTube songs</p>
+        </div>
+
+        <!-- Search box -->
+        <div class="card">
+            <input id="query" placeholder="Type song name..." onkeydown="if(event.key==='Enter') search()">
+            <button onclick="search()">Search</button>
+
+            <!-- Results rendered dynamically -->
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="/scripts/auth.js"></script>
+    <script src="/scripts/search.js"></script>
+    <script>
+        protectPage();
+        loadProfile();
+    </script>
+</body>
+
+</html>

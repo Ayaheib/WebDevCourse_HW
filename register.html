@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-title">Register</div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Create Account</h2>
+
+            <input id="username" placeholder="Username">
+            <input id="firstName" placeholder="First Name">
+            <input id="password" type="password" placeholder="Password">
+            <input id="confirm" type="password" placeholder="Confirm Password">
+            <input id="image" placeholder="Profile Image URL">
+
+            <button onclick="register()">Register</button>
+
+            <p>Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="/scripts/auth.js"></script>
+    <script>redirectIfLogged();</script>
+</body>
+
+</html>
